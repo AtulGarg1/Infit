@@ -7,13 +7,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -22,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_faq);
+        setContentView(R.layout.dashboard);
 
         // hide the nav bar
         if (getSupportActionBar() != null) {
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         /*    dashboard    */
-//        dashboard();
+        dashboard();
 
         /*    add client    */
 //        addClient();
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 //        referralCode();
 
         /*    faq    */
-        faq();
+//        faq();
     }
 
     private void addClient() {
@@ -105,17 +109,29 @@ public class MainActivity extends AppCompatActivity {
         final View ReviewView = getLayoutInflater().inflate(R.layout.customer_reviews, null);
 
         // hooks
+        RatingBar ratingBar;
+        ImageView profile;
+        TextView name;
+        TextView ratingText;
+        TextView description;
+        TextView viewMoreBtn;
+
+        ratingBar = findViewById(R.id.customer_reviews_rating);
+        profile = findViewById(R.id.customer_reviews_profile);
+        name = findViewById(R.id.customer_reviews_name);
+        ratingText = findViewById(R.id.customer_reviews_rating_text);
+        description = findViewById(R.id.customer_reviews_description);
+        viewMoreBtn = findViewById(R.id.customer_reviews_view_more);
 
         // showing dialog box
         dialogBuilder.setView(ReviewView);
-        AlertDialog dialog = dialogBuilder.create();
+        Dialog dialog = dialogBuilder.create();
         dialog.show();
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = displayMetrics.widthPixels;
 
-        dialog.getWindow().setLayout(width/2, 500);
+        dialog.getWindow().setLayout(960, 600);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
 

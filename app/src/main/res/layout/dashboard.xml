@@ -28,6 +28,7 @@
                 android:textSize="12sp"
                 android:layout_marginBottom="-2dp"/>
             <TextView
+                android:id="@+id/dashboard_name"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Dr. Strange"
@@ -50,22 +51,29 @@
                 android:background="@drawable/dashboard_rating_bg"
                 android:orientation="horizontal">
                 <RatingBar
-                    android:layout_width="57dp"
-                    android:layout_height="32dp"
+                    android:id="@+id/dashboard_rating"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:progressDrawable="@drawable/dashboard_rating_star"
-                    android:layout_marginStart="-20dp"
+                    android:progressDrawable="@drawable/custom_ratingbar"
+                    android:layout_marginStart="-41dp"
+                    android:layout_marginTop="-1dp"
                     android:isIndicator="true"
-                    android:scaleX="0.3"
-                    android:scaleY="0.3"/>
+                    android:numStars="2"
+                    android:stepSize="2.5"
+                    android:rating="2"
+                    android:scaleX="0.2"
+                    android:scaleY="0.2"/>
                 <TextView
+                    android:id="@+id/dashboard_rating_text"
                     android:layout_width="wrap_content"
                     android:layout_height="18dp"
                     android:textSize="11sp"
                     android:fontFamily="@font/nats_font"
                     android:textColor="#000000"
                     android:text="4.8"
-                    android:layout_marginTop="-2dp"/>
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginStart="-40dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -84,6 +92,7 @@
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
         <ImageView
+            android:id="@+id/dashboard_upcoming_consultations_btn"
             android:layout_width="17dp"
             android:layout_height="17dp"
             android:background="@drawable/dachboard_more_vector"
@@ -112,6 +121,7 @@
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
         <ImageView
+            android:id="@+id/dashboard_patient_profiles_btn"
             android:layout_width="17dp"
             android:layout_height="17dp"
             android:background="@drawable/dachboard_more_vector"
@@ -125,6 +135,7 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="10dp">
         <ImageButton
+            android:id="@+id/dashboard_patient_profiles_add"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:background="@drawable/dashboard_add_btn"
@@ -150,6 +161,7 @@
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
         <ImageView
+            android:id="@+id/dashboard_unread_messages_btn"
             android:layout_width="17dp"
             android:layout_height="17dp"
             android:background="@drawable/dachboard_more_vector"

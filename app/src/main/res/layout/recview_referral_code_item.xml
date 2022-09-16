@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="120dp"
     android:background="@drawable/recview_referral_code_item_bg"
     android:layout_marginHorizontal="13dp"
     android:orientation="vertical">
@@ -32,13 +32,13 @@
             android:layout_weight="1"/>
         <ImageButton
             android:id="@+id/recview_referral_code_menu"
-            android:layout_width="8dp"
+            android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:background="@drawable/recview_referral_code_item_menu_btn"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="6dp"
             android:scaleY="0.5"
-            android:scaleX="0.5"/>
+            android:scaleX="0.2"/>
     </LinearLayout>
     <TextView
         android:layout_width="70dp"

@@ -6,13 +6,11 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_referral_code);
+        setContentView(R.layout.activity_faq);
 
         // hide the nav bar
         if (getSupportActionBar() != null) {
@@ -41,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
 //        finalRecipe();
 
         /*    referral code    */
-        referralCode();
+//        referralCode();
+
+        /*    faq    */
+        faq();
     }
 
     private void addClient() {
@@ -199,8 +200,19 @@ public class MainActivity extends AppCompatActivity {
 
         referralCodeRecView = findViewById(R.id.recview_referral_code);
         referralCodeRecView.setLayoutManager(new LinearLayoutManager(this));
-        // for testing
-        Object[] arr = {1, 2};
-        referralCodeRecView.setAdapter(new AdapterReferralCode(arr));
+//        referralCodeRecView.setAdapter(new AdapterReferralCode());
+    }
+
+    private void faq() {
+        ImageButton faqs = findViewById(R.id.faq_faqs);
+        ImageButton email = findViewById(R.id.faq_email);
+
+        faqs.setOnClickListener(view -> {
+            // do some work
+        });
+
+        email.setOnClickListener(view -> {
+            // do some work
+        });
     }
 }

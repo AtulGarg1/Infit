@@ -5,27 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FAQ">
+    tools:context=".FAQ"
+    android:background="@color/white">
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <ImageView
-        android:layout_width="230dp"
-        android:layout_height="230dp"
+        android:layout_width="338dp"
+        android:layout_height="338dp"
         android:background="@drawable/faq_bg"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"/>
     <ImageButton
         android:id="@+id/faq_faqs"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
+        android:layout_width="309dp"
+        android:layout_height="66dp"
         android:background="@drawable/faq_faqs_btn"
         android:layout_gravity="center_horizontal"/>
     <ImageButton
         android:id="@+id/faq_email"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
+        android:layout_width="309dp"
+        android:layout_height="66dp"
         android:background="@drawable/faq_email_btn"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"/>

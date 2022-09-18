@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="210dp"
-    android:layout_height="100dp"
+    android:layout_width="218dp"
+    android:layout_height="114dp"
     android:orientation="vertical"
     android:background="@drawable/popup_window_bg">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
     <LinearLayout
         android:id="@+id/popup_download"
         android:layout_width="210dp"
@@ -65,4 +69,8 @@
             android:textSize="12sp"
             android:textColor="#FFFFFF"/>
     </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
 </LinearLayout>

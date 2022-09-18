@@ -52,4 +52,8 @@
     <string name="download">Download</string>
     <string name="share">Share</string>
     <string name="delete">Delete</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet</string>
+    <string name="question">Question</string>
+    <string name="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="search">Search</string>
 </resources>

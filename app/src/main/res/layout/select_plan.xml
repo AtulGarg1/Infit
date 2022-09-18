@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/select_plan_bg">
@@ -21,87 +21,85 @@
         android:layout_gravity="center_horizontal">
         <RadioButton
             android:id="@+id/musclePlan"
-            android:layout_width="65dp"
-            android:layout_height="25dp"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/muscle_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="8dp" />
+            android:textAlignment="center"/>
         <RadioButton
             android:id="@+id/weightLossPlan"
-            android:layout_width="85dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="-25dp"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="-34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/weight_loss_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="7dp"
-            android:layout_marginStart="70dp"/>
+            android:textAlignment="center"
+            android:layout_marginStart="111dp"/>
         <RadioButton
             android:id="@+id/day17DietPlan"
-            android:layout_width="74dp"
-            android:layout_height="25dp"
+            android:layout_width="109dp"
+            android:layout_height="34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/day_17_diet_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="4dp"
-
-            android:layout_marginVertical="5dp"/>
+            android:textAlignment="center"
+            android:layout_marginVertical="9dp"/>
         <RadioButton
             android:id="@+id/proteinDietPlan"
-            android:layout_width="85dp"
-            android:layout_height="25dp"
+            android:layout_width="115dp"
+            android:layout_height="34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/protein_diet_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="8dp"
-            android:layout_marginTop="-30dp"
-            android:layout_marginStart="80dp"
+            android:textAlignment="center"
+            android:layout_marginTop="-43dp"
+            android:layout_marginStart="118dp"
             android:layout_marginBottom="5dp"/>
         <RadioButton
             android:id="@+id/dailyDietPlan"
-            android:layout_width="75dp"
-            android:layout_height="25dp"
+            android:layout_width="109dp"
+            android:layout_height="34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/daily_diet_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="8dp"
-            />
+            android:textAlignment="center"/>
         <RadioButton
             android:id="@+id/ketoDietPlan"
-            android:layout_width="75dp"
-            android:layout_height="25dp"
+            android:layout_width="109dp"
+            android:layout_height="34dp"
             android:button="@android:color/transparent"
             android:background="@drawable/selector_checkbox_bg"
             android:fontFamily="@font/nats_font"
             android:text="@string/keto_diet_plan"
             android:textSize="11sp"
             android:textColor="@color/selector_checkbox_text"
-            android:paddingHorizontal="8dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="-25dp"/>
+            android:textAlignment="center"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="-34dp"/>
     </RadioGroup>
     <ImageButton
         android:id="@+id/done_plan"
-        android:layout_width="92dp"
-        android:layout_height="33dp"
+        android:layout_width="121dp"
+        android:layout_height="41dp"
         android:background="@drawable/done_btn"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="6dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="6dp"/>
 </LinearLayout>

@@ -70,7 +70,9 @@ public class AdapterReferralCode extends RecyclerView.Adapter<AdapterReferralCod
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View myPopupView = inflater.inflate(R.layout.popup_window, null);
 
-        final PopupWindow popupWindow = new PopupWindow(myPopupView, 510, 350, true);
+//        final PopupWindow popupWindow = new PopupWindow(myPopupView, 510, 300, true);
+        float factor = view.getContext().getResources().getDisplayMetrics().density;
+        final PopupWindow popupWindow = new PopupWindow(myPopupView, (int)(200 * factor), (int)(114 * factor), true);
 
         popupWindow.showAsDropDown(view, -400, 0);
 

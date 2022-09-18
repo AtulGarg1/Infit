@@ -19,15 +19,14 @@ public class AdapterConsultation extends RecyclerView.Adapter<AdapterConsultatio
 
     @Override
     public int getItemViewType(int position) {
-        if(position == 0) return 1;
-        return 2;
+        return position;
     }
 
     @NonNull
     @Override
     public AdapterConsultation.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
-        if(viewType == 1) {
+        if(viewType == 0) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recview_consultation_item_first, parent, false);
         } else {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recview_consultation_item, parent, false);

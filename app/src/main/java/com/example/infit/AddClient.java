@@ -67,9 +67,9 @@ public class AddClient extends AppCompatActivity {
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = displayMetrics.widthPixels;
+        float factor = getResources().getDisplayMetrics().density;
 
-        dialog.getWindow().setLayout(width/2, 680);
+        dialog.getWindow().setLayout((int)(250 * factor), 680);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         done.setOnClickListener(view -> {
@@ -97,9 +97,9 @@ public class AddClient extends AppCompatActivity {
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = displayMetrics.widthPixels;
+        float factor = getResources().getDisplayMetrics().density;
 
-        dialog.getWindow().setLayout(width/2, 680);
+        dialog.getWindow().setLayout((int)(250 * factor), 680);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         done.setOnClickListener(view -> {

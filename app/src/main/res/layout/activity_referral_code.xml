@@ -4,9 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReferralCode">
+    tools:context=".ReferralCode"
+    android:background="@color/white"
+    android:orientation="vertical">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recview_referral_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"/>
 </LinearLayout>

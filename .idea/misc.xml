@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/custom_ratingbar.xml" value="0.2555" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/dashboard_tab_layout_bg_selector.xml" value="0.2555" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/ellipse_16.xml" value="0.2555" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/ellipse_239.xml" value="0.2265" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/final_recipe_tab_layout_bg_selector.xml" value="0.2555" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/ic_arrow_down.xml" value="0.2115" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/ic_delete.xml" value="0.2115" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/ic_more.xml" value="0.2115" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/menu.xml" value="0.2545" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/my_ratingbar.xml" value="0.2115" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/drawable/plan_checked.xml" value="0.18" />
@@ -22,29 +25,34 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout-v28/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout-v28/add_client.xml" value="0.2" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/activity_faq.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/activity_faq_qna.xml" value="0.264" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/activity_final_recipe.xml" value="0.264" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/activity_referral_code.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/add_client.xml" value="0.264" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/add_client.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/add_client_second.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/content_final_recipe.xml" value="0.19265639165911153" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/customer_reviews.xml" value="0.264" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_first.xml" value="0.19265639165911153" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_ingredients.xml" value="0.13689936536718042" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_messages.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_recipe_details.xml" value="0.19265639165911153" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_reports.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/fragment_second.xml" value="0.19265639165911153" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/popup_window.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_consultation_item.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_consultation_item_first.xml" value="0.4" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_ingredients_item.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_ingredients_item.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_messages_item.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_patient_profile_item.xml" value="0.4" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_qna_parent_item.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_recipe_details_item.xml" value="0.4" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_referral_code_item.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/recview_referral_code_item.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/select_duration.xml" value="0.4" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/select_plan.xml" value="0.264" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/t.xml" value="0.264" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/test.xml" value="0.4" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/layout/test.xml" value="0.264" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/Infit2/app/src/main/res/menu/popup_menu.xml" value="0.20436083796494228" />
       </map>
     </option>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard);
+        setContentView(R.layout.activity_faq_qna);
 
         // hide the nav bar
         if (getSupportActionBar() != null) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         /*    dashboard    */
-        dashboard();
+//        dashboard();
 
         /*    add client    */
 //        addClient();
@@ -47,6 +47,19 @@ public class MainActivity extends AppCompatActivity {
 
         /*    faq    */
 //        faq();
+
+        /*    faq qna    */
+        faq_qna();
+    }
+
+    private void faq_qna() {
+        // for testing
+        Object[] a = new Object[10];
+
+        RecyclerView recViewQNAParent;
+        recViewQNAParent = findViewById(R.id.recview_qna_parent);
+        recViewQNAParent.setAdapter(new AdapterQNAParent(a));
+        recViewQNAParent.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void addClient() {
@@ -83,22 +96,25 @@ public class MainActivity extends AppCompatActivity {
         View reviewsLayout = findViewById(R.id.dashboard_customer_reviews);
         reviewsLayout.setOnClickListener(view -> showReviewsDialogBox());
 
+        // for testing recycler views
+        Object[] a = new Object[10];
+
         /*    patient profile recycler view    */
         RecyclerView patientProfile;
         patientProfile = findViewById(R.id.recview_patient_profile);
-        // patientProfile.setAdapter(new AdapterPatientProfile());
+        patientProfile.setAdapter(new AdapterPatientProfile(a));
         patientProfile.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         /*    consultation recycler view    */
         RecyclerView consultation;
         consultation = findViewById(R.id.recview_consultation);
-        // consultation.setAdapter(new AdapterConsultation());
+        consultation.setAdapter(new AdapterConsultation(a));
         consultation.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         /*    messages recycler view    */
         RecyclerView messages;
         messages = findViewById(R.id.recview_messages);
-        // messages.setAdapter(new AdapterMessages());
+        messages.setAdapter(new AdapterMessages(a));
         messages.setLayoutManager(new LinearLayoutManager(this));
 
     }
@@ -131,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
-        dialog.getWindow().setLayout(960, 600);
+//        dialog.getWindow().setLayout(960, 600);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
 
@@ -156,9 +172,9 @@ public class MainActivity extends AppCompatActivity {
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = displayMetrics.widthPixels;
+        float factor = getResources().getDisplayMetrics().density;
 
-        dialog.getWindow().setLayout(width/2, 680);
+        dialog.getWindow().setLayout((int)(250 * factor), 680);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         done.setOnClickListener(view -> {
@@ -180,16 +196,18 @@ public class MainActivity extends AppCompatActivity {
         RadioButton duration_12 = selectDurationView.findViewById(R.id.duration_12);
         RadioButton duration_18 = selectDurationView.findViewById(R.id.duration_18);
 
+        // setting and displaying dialog box
         dialogBuilder.setView(selectDurationView);
         AlertDialog dialog = dialogBuilder.create();
         dialog.show();
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = displayMetrics.widthPixels;
+        float factor = getResources().getDisplayMetrics().density;
 
-        dialog.getWindow().setLayout(width/2, 680);
+        dialog.getWindow().setLayout((int)(250 * factor), 680);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
 
         done.setOnClickListener(view -> {
             // action with checked plans
@@ -212,11 +230,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void referralCode() {
-        RecyclerView referralCodeRecView;
+        // for testing
+        Object[] a = new Object[10];
 
+        RecyclerView referralCodeRecView;
         referralCodeRecView = findViewById(R.id.recview_referral_code);
         referralCodeRecView.setLayoutManager(new LinearLayoutManager(this));
-//        referralCodeRecView.setAdapter(new AdapterReferralCode());
+        referralCodeRecView.setAdapter(new AdapterReferralCode(a));
     }
 
     private void faq() {

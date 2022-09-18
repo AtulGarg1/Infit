@@ -25,9 +25,12 @@ public class IngredientsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // for testing purpose
+        Object[] a = new Object[10];
+
         RecyclerView ingredientsRecView;
         ingredientsRecView = view.findViewById(R.id.recview_ingredients);
-//        ingredientsRecView.setAdapter(new AdapterIngredients());
+        ingredientsRecView.setAdapter(new AdapterIngredients(a));
         ingredientsRecView.setLayoutManager(new LinearLayoutManager(view.getContext()));
     }
 }

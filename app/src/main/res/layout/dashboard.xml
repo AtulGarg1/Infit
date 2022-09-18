@@ -3,30 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="63dp"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="15dp">
         <ImageView
             android:id="@+id/dashboard_profile"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
             android:layout_marginEnd="2dp"
             android:background="@drawable/dashboard_dummy_profile"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginStart="5dp">
             <TextView
-                android:layout_width="65dp"
+                android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:text="@string/welcome_back"
                 android:fontFamily="@font/nats_font"
                 android:textSize="12sp"
-                android:layout_marginBottom="-2dp"/>
+                android:textColor="#A5A5A5"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginTop="8dp"/>
             <TextView
                 android:id="@+id/dashboard_name"
                 android:layout_width="wrap_content"
@@ -37,13 +41,17 @@
                 android:textSize="17sp"
                 android:layout_marginTop="-10dp"/>
         </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <androidx.cardview.widget.CardView
             android:layout_width="45dp"
             android:layout_height="20dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="195dp"
             android:elevation="10dp"
-            app:cardCornerRadius="6dp">
+            app:cardCornerRadius="6dp"
+            android:layout_marginEnd="2dp">
             <LinearLayout
                 android:id="@+id/dashboard_customer_reviews"
                 android:layout_width="match_parent"
@@ -79,9 +87,9 @@
     </LinearLayout>
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="17dp"
+        android:layout_height="18dp"
         android:layout_marginHorizontal="17dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="140dp"
@@ -91,26 +99,29 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <ImageView
             android:id="@+id/dashboard_upcoming_consultations_btn"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:background="@drawable/dachboard_more_vector"
-            android:layout_marginStart="200dp"/>
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/dachboard_more_vector"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recview_consultation"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="14dp"/>
+        android:layout_marginTop="21dp"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="17dp"
+        android:layout_height="18dp"
         android:layout_marginHorizontal="17dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="23dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="135dp"
@@ -120,26 +131,29 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <ImageView
             android:id="@+id/dashboard_patient_profiles_btn"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:background="@drawable/dachboard_more_vector"
-            android:layout_marginStart="200dp"/>
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/dachboard_more_vector"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="49dp"
         android:orientation="horizontal"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="16dp">
         <ImageButton
             android:id="@+id/dashboard_patient_profiles_add"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
             android:background="@drawable/dashboard_add_btn"
-            android:layout_marginEnd="6dp"/>
+            android:layout_marginEnd="9dp"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recview_patient_profile"
             android:layout_width="match_parent"
@@ -148,9 +162,9 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="17dp"
+        android:layout_height="18dp"
         android:layout_marginHorizontal="17dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="37dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="135dp"
@@ -160,17 +174,20 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="-7dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <ImageView
             android:id="@+id/dashboard_unread_messages_btn"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:background="@drawable/dachboard_more_vector"
-            android:layout_marginStart="200dp"/>
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/dachboard_more_vector"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recview_messages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="13dp"/>
+        android:layout_marginTop="30dp"/>
 </LinearLayout>

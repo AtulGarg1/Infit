@@ -3,32 +3,40 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="10dp">
+    android:paddingBottom="16dp">
 
     <View
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:background="@drawable/dashboard_messages_dot"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="32dp"/>
+
     <ImageView
         android:id="@+id/recview_messages_profile"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/dashboard_dummy_patient_profile"/>
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/dashboard_dummy_patient_profile" />
+
     <TextView
         android:id="@+id/recview_messages_name"
         android:layout_width="wrap_content"
-        android:layout_height="27dp"
+        android:layout_height="wrap_content"
         android:text="John Kowalsky"
         android:fontFamily="@font/nats_font"
         android:textColor="#000000"
         android:textSize="17sp"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="0dp"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
     <ImageButton
         android:id="@+id/recview_messages_btn"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
+        android:layout_width="102dp"
+        android:layout_height="28dp"
         android:background="@drawable/dashboard_view_message_btn"
-        android:layout_marginStart="130dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"/>
 </LinearLayout>

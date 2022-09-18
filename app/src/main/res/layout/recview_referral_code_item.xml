@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="120dp"
+    android:layout_width="336dp"
+    android:layout_height="145dp"
     android:background="@drawable/recview_referral_code_item_bg"
-    android:layout_marginHorizontal="13dp"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="54dp"
         android:orientation="horizontal"
         android:layout_marginTop="6dp"
         android:layout_marginHorizontal="10dp">
         <ImageView
             android:id="@+id/recview_referral_code_profile"
-            android:layout_width="40dp"
+            android:layout_width="54dp"
             android:layout_height="match_parent"
             android:background="@drawable/dashboard_dummy_profile"/>
         <TextView
@@ -32,13 +31,12 @@
             android:layout_weight="1"/>
         <ImageButton
             android:id="@+id/recview_referral_code_menu"
-            android:layout_width="15dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/recview_referral_code_item_menu_btn"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="6dp"
-            android:scaleY="0.5"
-            android:scaleX="0.2"/>
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_more"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start"
+            android:layout_marginEnd="6dp"/>
     </LinearLayout>
     <TextView
         android:layout_width="70dp"
@@ -50,14 +48,15 @@
         android:layout_marginStart="20dp"/>
     <TextView
         android:id="@+id/recview_referral_code_code"
-        android:layout_width="85dp"
-        android:layout_height="28dp"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
         android:background="@drawable/recview_referral_code_item_code_bg"
         android:text="36gh366ffjg"
         android:fontFamily="@font/nats_font"
         android:textSize="14sp"
         android:textColor="#7862FB"
         android:textAlignment="center"
+        android:paddingVertical="3dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="6dp"/>
 </LinearLayout>

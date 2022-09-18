@@ -25,9 +25,12 @@ public class RecipeDetailsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // for testing purpose
+        Object[] a = new Object[10];
+
         RecyclerView recipeDetailsRecView;
         recipeDetailsRecView = view.findViewById(R.id.recview_recipe_details);
-//        recipeDetailsRecView.setAdapter(new AdapterRecipeDetails());
+        recipeDetailsRecView.setAdapter(new AdapterRecipeDetails(a));
         recipeDetailsRecView.setLayoutManager(new LinearLayoutManager(view.getContext()));
     }
 }
